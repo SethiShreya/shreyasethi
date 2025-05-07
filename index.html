@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shreya Sethi - XR Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
+    
+</head>
+<body>
+<!-- NavBar -->
+
+<!-- Add this in your <head> for smooth scrolling -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container-fluid">
+       
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          
+          <li class="nav-item">
+            <a class="nav-link home-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contributions" >Contributions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#research">Research</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  
+
+<div id="about" class="container mt-5">
+  <div class="row align-items-center border p-4 rounded shadow-sm">
+    <!-- Left Section: Profile + Social -->
+    <div class="col-md-5 text-center">
+      <img src="shreyasethi.jpg" alt="Shreya Sethi" class="profile-img mb-3">
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fas fa-globe"></i></a>
+      </div>
+    </div>
+
+    <!-- Right Section: Name + Role + Skills -->
+    <div class="col-md-7 text-center text-md-center">
+        <h1>Shreya Sethi</h1>
+        <p>XR Developer | Unity Developer</p>
+        <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
+          <span class="skill-badge">Unity</span>
+          <span class="skill-badge">C#</span>
+          <span class="skill-badge">VR Development</span>
+          <span class="skill-badge">XR Interaction Toolkit</span>
+          <span class="skill-badge">Oculus SDK</span>
+          <span class="skill-badge">Git</span>
+          <span class="skill-badge">Git</span>
+          <span class="skill-badge">XR Interaction Toolkit</span>
+          <span class="skill-badge">Oculus SDK</span>
+          <span class="skill-badge">Git</span>
+          <span class="skill-badge">Git</span>
+        </div>
+        
+    </div>
+
+    
+    <!-- Contributions -->
+
+    <div class="section-container" id="contributions">
+      <h2 class="section-heading" >Open-Source Contributions</h2>
+    
+      <div class="container-fluid my-4"> <!-- Changed to container-fluid -->
+        <div class="row g-4"> <!-- Removed justify-content-center -->
+          
+          <div class="col-md-6">
+            <div class="card h-100">
+              <img src="open-source/scribe.png" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-md-6">
+            <div class="card h-100">
+              <img src="open-source/octernship.png" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- My projects -->
+    <div class="justify-content-center text-md-center" id="projects">
+      <h1>Projects</h1>
+    </div>
+    <div class="section-container">
+      <h2 class="section-heading text-center mb-4">My Projects</h2>
+    
+      <div class="position-relative px-3">
+        <!-- Scroll Buttons -->
+        
+        <button class="btn btn-secondary position-absolute top-50 start-0 translate-middle-y z-3 slider-btn" onclick="scrollVideos(-1, this)">
+          &#8592;
+        </button>
+        <button class="btn btn-secondary position-absolute top-50 end-0 translate-middle-y z-3 slider-btn" onclick="scrollVideos(1, this)">
+          &#8594;
+        </button>
+    
+        <!-- Scrollable video container -->
+        <div class="overflow-hidden">
+          <div id="video-slider"
+               class="d-flex flex-nowrap"
+               style="overflow-x: auto; scroll-behavior: smooth; gap: 1rem;">
+    
+            <!-- Cards (ensure fixed width!) -->
+
+            <div class="col-md-6">
+              <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/mlSlJ9nlQWo" allowfullscreen></iframe>
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                  <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+                </div>
+              </div>
+            </div>    
+            
+
+            <div class="col-md-6">
+              <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/-WhXcmVqnCI" allowfullscreen></iframe>
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                  <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/SmIjlj0WVmo" allowfullscreen></iframe>
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                  <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+                </div>
+              </div>
+            </div>    
+    
+            <div class="col-md-6">
+              <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/dWpQ6ZIWgy0" allowfullscreen></iframe>
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                  <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+                </div>
+              </div>
+            </div>    
+
+            <div class="col-md-6">
+              <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/Ef7YVK-0TH0" allowfullscreen></iframe>
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                  <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+                </div>
+              </div>
+            </div> 
+
+            <div class="col-md-6">
+              <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/ogL3t1Iky0o" allowfullscreen></iframe>
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                  <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+                </div>
+              </div>
+            </div> 
+
+            <div class="col-md-6">
+              <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/x0bH92XZc-E" allowfullscreen></iframe>
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                  <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+                </div>
+              </div>
+            </div> 
+
+            <div class="col-md-6">
+              <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/nA4qaKeVBL8" allowfullscreen></iframe>
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                  <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+                </div>
+              </div>
+            </div> 
+            <!-- Add more cards here -->
+    
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hobby Projects -->
+    <div class="section-container">
+      <h2 class="section-heading text-center mb-4">Hobby Projects</h2>
+    
+      <div class="position-relative px-3">
+        <!-- Scroll Buttons -->
+        <button class="btn btn-secondary position-absolute top-50 start-0 translate-middle-y z-3 slider-btn" onclick="scrollVideos(-1, this)">
+          &#8592;
+        </button>
+        <button class="btn btn-secondary position-absolute top-50 end-0 translate-middle-y z-3 slider-btn" onclick="scrollVideos(1, this)">
+          &#8594;
+        </button>
+    
+        <!-- Scrollable video container -->
+        <div class="overflow-hidden">
+          <div id="video-slider"
+               class="d-flex flex-nowrap"
+               style="overflow-x: auto; scroll-behavior: smooth; gap: 1rem;">
+    
+            <!-- Cards (ensure fixed width!) -->
+
+            <div class="col-md-6">
+              <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/CthSHX6UbY4" allowfullscreen></iframe>
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                  <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+                </div>
+              </div>
+            </div>    
+            
+
+            <div class="col-md-6">
+              <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/V3wkE32ECs8" allowfullscreen></iframe>
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                  <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/Hn_iQSrJSdY" allowfullscreen></iframe>
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                  <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+                </div>
+              </div>
+            </div>    
+    
+            <div class="col-md-6">
+              <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/68U9yQCibsM" allowfullscreen></iframe>
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                  <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+                </div>
+              </div>
+            </div>    
+
+            <div class="col-md-6">
+              <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/oZnmkJlJxsQ" allowfullscreen></iframe>
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                  <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+                </div>
+              </div>
+            </div> 
+
+            <div class="col-md-6">
+              <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/xgk8vFzxhTc" allowfullscreen></iframe>
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                  <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+                </div>
+              </div>
+            </div> 
+
+            <!-- Add more cards here -->
+    
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="justify-content-center text-md-center" id="research">
+      <h1>Research</h1>
+    </div>
+
+    <!-- Open cv Reserch -->
+
+    <div class="section-container" >
+      <h2 class="section-heading">Computer Vision Research</h2>
+    
+      <div class="container-fluid my-4"> <!-- Changed to container-fluid -->
+        <div class="row g-4"> <!-- Removed justify-content-center -->
+          
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/E0r87GrdC7A" allowfullscreen></iframe>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/VIb4JDBwt-Y" allowfullscreen></iframe>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Photogrammetry Research -->
+
+    <div class="section-container">
+      <h2 class="section-heading">Photogrammetry Research</h2>
+    
+      <div class="container-fluid my-4"> <!-- Changed to container-fluid -->
+        <div class="row g-4"> <!-- Removed justify-content-center -->
+          
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="ratio ratio-16x9">
+                <div id="card"> 
+                  <model-viewer src="models/310.glb"
+                  
+                    ios-src="models/310.usdz"
+                    poster="https://xrvisionlabs.com/wp-content/uploads/loading.svg" 
+                    autoplay 
+                    alt="A 3D model" 
+                    shadow-intensity="1" 
+                    scale="1 1 1" 
+                    
+                    exposure="1"
+                    camera-controls 
+                      
+                    touch-action="pan-y"  
+                    auto-rotate> 
+                 </model-viewer> 
+                     
+                   </div> 
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="ratio ratio-16x9">
+                <div id="card"> 
+                  <model-viewer src="models/Lab_2.glb"
+                  
+                    ios-src="models/Lab.usdz"
+                    poster="https://xrvisionlabs.com/wp-content/uploads/loading.svg" 
+                    autoplay 
+                    alt="A 3D model" 
+                    shadow-intensity="1" 
+                    scale="1 1 1" 
+                    
+                    exposure="1"
+                    camera-controls 
+                      
+                    touch-action="pan-y"  
+                    auto-rotate> 
+                 </model-viewer> 
+                     
+                   </div>               
+
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+
+    
+
+   
+    
+  </div>
+
+  
+</div>
+<script type="module" 
+src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"> 
+</script>
+</body>
+</html>
